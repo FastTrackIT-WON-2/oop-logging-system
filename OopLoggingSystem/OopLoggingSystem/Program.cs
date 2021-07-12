@@ -7,7 +7,7 @@ namespace OopLoggingSystem
     {
         static void Main(string[] args)
         {
-            ApplicationLog.Initialize(new FileSystemLogger());
+            ApplicationLog.Initialize(new FileSystemLogger(@"D:\Temp\FastTrackIT\Test"));
 
             int nrOfElements = ReadNumber("Please specify the number of elements", 3);
             if (nrOfElements < 0)
